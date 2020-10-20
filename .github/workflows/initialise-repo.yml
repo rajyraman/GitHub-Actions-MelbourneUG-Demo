@@ -56,7 +56,7 @@ jobs:
           route: POST /repos/:repo/pulls
           title: ${{ steps.branch-name.outputs.branchName }}
           head: ${{ steps.branch-name.outputs.branchName }}
-          base: 'master'
+          base: 'main'
           maintainer_can_modify: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
